@@ -9,6 +9,10 @@
     align-items: center;
 
 }
+h4{
+    padding-left: 4%;
+    margin-bottom: 0;
+}
 .nav{
     display: flex;
     color: blue;
