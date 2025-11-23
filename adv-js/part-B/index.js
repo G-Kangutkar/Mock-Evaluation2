@@ -2,7 +2,7 @@
 let nums = [10, 3, 7, 20, 13, 2];
 const square = nums.map(i=>i*i)
 console.log(square)
-const prime = square.filter(i=>{
+const prime = square.filter( i=>{
     let flag=0;
     for(j=0;j<i;j++){
         if(i%j === 0){
@@ -12,7 +12,8 @@ const prime = square.filter(i=>{
     if(flag==2){
         return i
     }
-})
+}
+)
 console.log(prime)
 
 const sum = nums.reduce((acc,n)=>{
@@ -25,17 +26,23 @@ const desec = nums.sort((a,b)=>b-a)
 console.log(desec)
 
 
+
+
+
+///////////////////////////////////////
+
 function displayCar(vehicleCategory){
-    console.log('This is car Info')
+    
+    console.log(`This is ${vehicleCategory} Info`)
     return true
 }
 function displayTruck(vehicleCategory){
-    console.log('This is truck Info')
+    console.log(`This is ${vehicleCategory} Info`)
     return true
     
 }
 function displayBike(vehicleCategory){
-    console.log('This is bike Info')
+    console.log(`This is ${vehicleCategory} Info`)
     return true
 }
 function vehicleInfo(vehicleCategory, callbackFn){
