@@ -5,7 +5,7 @@ console.log(square)
 const prime = square.filter(i=>{
     let flag=0;
     for(j=0;j<i;j++){
-        if(i%j == 0){
+        if(i%j === 0){
             flag++;
         }
     }
@@ -23,3 +23,26 @@ console.log(sum)
 
 const desec = nums.sort((a,b)=>b-a)
 console.log(desec)
+
+
+function displayCar(vehicleCategory){
+    console.log('This is car Info')
+    return true
+}
+function displayTruck(vehicleCategory){
+    console.log('This is truck Info')
+    return true
+    
+}
+function displayBike(vehicleCategory){
+    console.log('This is bike Info')
+    return true
+}
+function vehicleInfo(vehicleCategory, callbackFn){
+    callbackFn(vehicleCategory);
+    
+}
+vehicleInfo("Car", displayCar)
+vehicleInfo("Truck", displayTruck)
+vehicleInfo("Bike", displayBike)
+
