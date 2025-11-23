@@ -9,12 +9,11 @@ let extra = { city: "Bengaluru" };
 const profile = {...person,...extra}
 console.log(profile)
 
- // should return 10
-// const sumAll=(...num)=>({
-//     let total:0,
-//     return total: +=num
-// },0)
-// console.log(sumAll(1, 2, 3, 4))
+const sumAll=(...num)=>{i=>{
+    return i+num
+    
+},0}
+console.log(sumAll(1, 2, 3, 4))
 
 let numbers = [10, 20, 30, 40, 50];
 const [a,,,,]=numbers
